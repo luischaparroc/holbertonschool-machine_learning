@@ -18,3 +18,4 @@ All of the following files are scripts and programs written in Python:
 | `3-flip_me_over.py` | Returns the transpose of a 2D matrix |
 | `4-line_up.py` | Adds two arrays element-wise |
 | `5-across_the_planes.py` | Adds two matrices element-wise |
+| `6-howdy_partner.py` | Concatenates two arrays |
