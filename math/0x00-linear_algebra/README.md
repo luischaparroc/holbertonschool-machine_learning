@@ -9,3 +9,8 @@ Project done during **Software Engineering studies** at **Holberton School**. It
 
 ## Files
 All of the following files are scripts and programs written in Python:
+
+| Filename | Description |
+| -------- | ----------- |
+| `0-slice_me_up.py` | Script to slice an array |
+| `1-trim_me_down.py` | Appends data of a matrix into another one |
