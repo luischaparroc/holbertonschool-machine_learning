@@ -3,6 +3,11 @@
 
 
 def matrix_transpose(matrix):
+    """Calcuates the transpose of a matrix
+
+    Returns:
+        List with the transpose
+    """
     transpose = []
     for i in range(len(matrix[0])):
         new_row = []
