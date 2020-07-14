@@ -14,3 +14,4 @@ All of the following files are scripts and programs written in Python:
 | -------- | ----------- |
 | `0-slice_me_up.py` | Script to slice an array |
 | `1-trim_me_down.py` | Appends data of a matrix into another one |
+| `2-size_me_please.py` | Calculates the shape of a matrix |

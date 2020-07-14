@@ -3,7 +3,7 @@
 Module of **Machine Learning** , carried out during **Software Engineering studies** at **[Holberton School](https://www.holbertonschool.com/)**.
 
 ## Technologies
-* Python Scripts are written with Python 3.5
+* Scripts are written with Python 3.5
 * `NumPy`, version 1.15
 * `SciPy`, version 1.3
 
