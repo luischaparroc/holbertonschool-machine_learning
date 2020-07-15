@@ -19,3 +19,4 @@ All of the following files are scripts and programs written in Python:
 | `4-line_up.py` | Adds two arrays element-wise |
 | `5-across_the_planes.py` | Adds two matrices element-wise |
 | `6-howdy_partner.py` | Concatenates two arrays |
+| `7-gettin_cozy.py` | Concatenates two matrices along a specific axis |
