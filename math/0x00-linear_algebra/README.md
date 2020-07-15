@@ -24,3 +24,4 @@ All of the following files are scripts and programs written in Python:
 | `9-let_the_butcher_slice_it.py` | Slices into a NumPy matrix |
 | `10-ill_use_my_scale.py` | Calculates the shape of a `numpy.ndarray` |
 | `11-the_western_exchange.py` | Transposes a matrix |
+| `12-bracin_the_elements.py` | Performs element-wise addition, subtraction, multiplication and division |
