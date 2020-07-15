@@ -21,3 +21,4 @@ All of the following files are scripts and programs written in Python:
 | `6-howdy_partner.py` | Concatenates two arrays |
 | `7-gettin_cozy.py` | Concatenates two matrices along a specific axis |
 | `8-ridin_bareback.py` | Multiplicates 2D matrices |
+| `9-let_the_butcher_slice_it.py` | Slices into a NumPy matrix |
