@@ -20,3 +20,4 @@ All of the following files are scripts and programs written in Python:
 | `5-across_the_planes.py` | Adds two matrices element-wise |
 | `6-howdy_partner.py` | Concatenates two arrays |
 | `7-gettin_cozy.py` | Concatenates two matrices along a specific axis |
+| `8-ridin_bareback.py` | Multiplicates 2D matrices |
