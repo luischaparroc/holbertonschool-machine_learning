@@ -29,3 +29,4 @@ All of the following files are scripts and programs written in Python:
 | `14-saddle_up.py` | Performs matrix multiplication |
 | `100-slice_like_a_ninja.py` | Slices a matrix along a specific axes |
 | `101-the_whole_barn.py` | Adds two matrices of n dimensions |
+| `102-squashed_like_sardines.py` | Concatenates two matrices along a specific axis |
