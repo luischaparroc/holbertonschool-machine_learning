@@ -27,3 +27,4 @@ All of the following files are scripts and programs written in Python:
 | `12-bracin_the_elements.py` | Performs element-wise addition, subtraction, multiplication and division |
 | `13-cats_got_your_tongue.py` | Concatenates two matrices along a specific axis |
 | `14-saddle_up.py` | Performs matrix multiplication |
+| `100-slice_like_a_ninja.py` | Slices a matrix along a specific axes |
