@@ -8,10 +8,7 @@ def matrix_transpose(matrix):
     Returns:
         List with the transpose
     """
-    transpose = []
-    for i in range(len(matrix[0])):
-        new_row = []
-        for j in range(len(matrix)):
-            new_row.append(matrix[j][i])
-        transpose.append(new_row)
-    return transpose
+    range_ax0 = range(len(matrix[0]))  # range of axis 0
+    range_ax1 = range(len(matrix))  # range of axis 1
+
+    return [[matrix[j][i] for j in range_ax1] for i in range_ax0]
