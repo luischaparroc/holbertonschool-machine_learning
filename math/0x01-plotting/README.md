@@ -15,3 +15,4 @@ All of the following files are scripts and programs written in Python:
 | `1-scatter.py` | Shows a scatter plot |
 | `2-change_scale.py` | Shows a line graph logarithmically scaled |
 | `3-two.py` | Shows a plot with two labeled line graphs |
+| `4-frequency.py` | Shows a histogram binded by 10 units |
