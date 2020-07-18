@@ -18,3 +18,4 @@ All of the following files are scripts and programs written in Python:
 | `4-frequency.py` | Shows a histogram binded by 10 units |
 | `5-all_in_one.py` | Shows 5 subplots in one figure |
 | `6-bars.py` | Shows a stacked bar graph |
+| `100-gradient.py` | Shows a scatter plot with a colorbar |
