@@ -12,3 +12,4 @@ All of the following files are scripts and programs written in Python:
 | Filename | Description |
 | -------- | ----------- |
 | `0-line.py` | Script to plot an array |
+| `1-scatter.py` | Shows a scatter plot |
