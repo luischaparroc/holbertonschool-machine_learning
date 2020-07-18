@@ -13,3 +13,4 @@ All of the following folders are projects done during the studies:
 | Project name | Description |
 | ------------ | ----------- |
 | `math/0x00-linear_algebra` | It aims to learn about vectors, matrices, transposes, dot product, matriz multiplication and NumPy |
+| `math/0x01-plotting` | It aims to learn about plot, scatter plot, line graph, bar graph, histogram and `matplotlib` |
