@@ -17,3 +17,4 @@ All of the following files are scripts and programs written in Python:
 | `3-two.py` | Shows a plot with two labeled line graphs |
 | `4-frequency.py` | Shows a histogram binded by 10 units |
 | `5-all_in_one.py` | Shows 5 subplots in one figure |
+| `6-bars.py` | Shows a stacked bar graph |
