@@ -6,6 +6,7 @@ Module of **Machine Learning** , carried out during **Software Engineering studi
 * Scripts are written with Python 3.5
 * `NumPy`, version 1.15
 * `SciPy`, version 1.3
+* `Matplotlib`, version 3.0
 
 ## Projects
 All of the following folders are projects done during the studies:

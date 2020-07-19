@@ -3,3 +3,6 @@
 
 # Ignore main files
 *-main.py
+
+# Ignore Numpy Compressed Files (NPZ)
+*.npz
