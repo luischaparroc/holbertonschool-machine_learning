@@ -11,3 +11,7 @@ The following files are answers of exercises shown on the platform and scripts w
 | Filename | Description |
 | -------- | ----------- |
 | `0-sigma_is_for_sum` | Answer of a summation exercise |
+| `1-seegma` | Answer of a summation exercise with two dummy variables |
+| `2-pi_is_for_product` | Answer of a product notation exercise |
+| `3-pee` | Answer of a product notation exercise |
+| `4-hello_derivatives` | Answer of a derivative |
