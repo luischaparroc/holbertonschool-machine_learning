@@ -15,3 +15,7 @@ The following files are answers of exercises shown on the platform and scripts w
 | `2-pi_is_for_product` | Answer of a product notation exercise |
 | `3-pee` | Answer of a product notation exercise |
 | `4-hello_derivatives` | Answer of a derivative |
+| `5-log_on_fire` | Answer of a derivative with product rule |
+| `6-voltaire` | Answer of a derivative with chain rule |
+| `7-partial_truths` | Answer of a partial derivative |
+| `8-all-together` | Answer of a partial derivative with chain rule |
