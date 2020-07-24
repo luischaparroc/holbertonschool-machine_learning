@@ -19,3 +19,4 @@ The following files are answers of exercises shown on the platform and scripts w
 | `6-voltaire` | Answer of a derivative with chain rule |
 | `7-partial_truths` | Answer of a partial derivative |
 | `8-all-together` | Answer of a partial derivative with chain rule |
+| `9-sum_total.py` | Function that calculates a math series of a summation squared |
