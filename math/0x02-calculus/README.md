@@ -21,3 +21,7 @@ The following files are answers of exercises shown on the platform and scripts w
 | `8-all-together` | Answer of a partial derivative with chain rule |
 | `9-sum_total.py` | Function that calculates a math series of a summation squared |
 | `10-matisse.py` | Function that calculates the derivative of a polynomial |
+| `11-integral` | Answer of an integral |
+| `12-integral` | Answer of an exponential integral |
+| `13-definite` | Answer of a definite integral |
+| `14-definite` | Answer of a definite integral |
