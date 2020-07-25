@@ -25,3 +25,5 @@ The following files are answers of exercises shown on the platform and scripts w
 | `12-integral` | Answer of an exponential integral |
 | `13-definite` | Answer of a definite integral |
 | `14-definite` | Answer of a definite integral |
+| `15-definite` | Answer of an multivariable integral |
+| `16-double` | Answer of a multivariable integral |
