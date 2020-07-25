@@ -27,3 +27,4 @@ The following files are answers of exercises shown on the platform and scripts w
 | `14-definite` | Answer of a definite integral |
 | `15-definite` | Answer of an multivariable integral |
 | `16-double` | Answer of a multivariable integral |
+| `17-integrate.py` | Function that calculates the integral of a polynomial |
