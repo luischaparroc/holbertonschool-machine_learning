@@ -49,8 +49,31 @@ class Poisson:
             PMF of k or 0 if k is out of range.
         """
         k = int(k)
+
         if k < 0:
             return 0
+
         num = (self.lambtha ** k) * (self.EULER_NUMBER ** -self.lambtha)
         den = self.factorial(k)
+
         return num/den
+
+    def cdf(self, k):
+        """Calculates Cumulative Distribution Function (CDF)
+
+        Args:
+            k: number of successes
+
+        Returns:
+            CDF of k or 0 if k is out of range.
+        """
+        k = int(k)
+
+        if k < 0:
+            return 0
+
+        summation = 0
+        for i in range(k + 1):
+            summation += (self.lambtha ** i) / (self.factorial(i))
+
+        return (self.EULER_NUMBER ** -self.lambtha) * summation
