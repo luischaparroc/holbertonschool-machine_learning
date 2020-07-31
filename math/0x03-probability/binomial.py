@@ -36,6 +36,21 @@ class Binomial:
             raise ValueError('p must be greater than 0 and less than 1')
         self.__p = float(p)
 
+    @staticmethod
+    def factorial(n):
+        """Calculates factorial of given number
+
+        Args:
+            n: input number
+
+        Returns:
+            response of n factorial
+        """
+        factorial_n = 1
+        for i in range(1, n + 1):
+            factorial_n *= i
+        return factorial_n
+
     @classmethod
     def calculate_n_p(cls, data):
         """Calculates n Bernoulli trials and probability"""
@@ -51,3 +66,24 @@ class Binomial:
         n = int(round(mean/p))
         p = (mean/n)
         return n, p
+
+    def pmf(self, k):
+        """Calculates Probability Mass Function (PMF)
+
+        Args:
+            k: number of successes
+
+        Returns:
+            PMF of k or 0 if k is out of range.
+        """
+        k = int(k)
+        if k < 0 or k > self.n:
+            return 0
+        n_factorial = self.factorial(self.n)
+        k_factorial = self.factorial(k)
+        n_k_factorial = self.factorial(self.n - k)
+        binomial_coefficient = n_factorial/(n_k_factorial * k_factorial)
+        q = 1 - self.p
+        sec = (self.p ** k) * (q ** (self.n - k))
+        pmf = binomial_coefficient * sec
+        return pmf
