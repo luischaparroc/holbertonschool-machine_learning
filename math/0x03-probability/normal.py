@@ -16,6 +16,12 @@ class Normal:
             summation += (number - mean) ** 2
         return (summation/len(data)) ** (1/2)
 
+    @classmethod
+    def get_erf(cls, x):
+        seq = x - ((x ** 3)/3) + ((x ** 5)/10) - ((x ** 7)/42) + ((x ** 9)/216)
+        erf = (2/(cls.PI ** (1/2))) * seq
+        return erf
+
     def __init__(self, data=None, mean=0, stddev=1.):
         """Class constructor"""
         if data is not None:
@@ -66,3 +72,15 @@ class Normal:
         euler_exp = self.EULER_NUMBER ** exp_component
         cdf = euler_exp/(self.stddev * ((2 * self.PI) ** (1/2)))
         return cdf
+
+    def cdf(self, x):
+        """Calculates Cumulative Distribution Function (CDF)
+
+        Args:
+            x: x-value
+
+        Returns:
+            CDF
+        """
+        expression = (x - self.mean)/(self.stddev * (2 ** (1/2)))
+        return (1/2) * (1 + self.get_erf(expression))
