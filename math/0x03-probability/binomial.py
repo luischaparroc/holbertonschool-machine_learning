@@ -69,21 +69,41 @@ class Binomial:
 
     def pmf(self, k):
         """Calculates Probability Mass Function (PMF)
-
         Args:
             k: number of successes
-
         Returns:
             PMF of k or 0 if k is out of range.
         """
         k = int(k)
         if k < 0 or k > self.n:
             return 0
+        binomial_coefficient = self.get_bcf(k)
+        q = 1 - self.p
+        return binomial_coefficient * ((self.p ** k) * (q ** (self.n - k)))
+
+    def cdf(self, k):
+        """Calculates Cumulative Distribution Function (CDF)
+
+        Args:
+            k: number of successes
+
+        Returns:
+            CDF of k or 0 if k is out of range.
+        """
+        k = int(k)
+        if k < 0 or k > self.n:
+            return 0
+        return sum([self.cdf_equation(i) for i in range(k + 1)])
+
+    def get_bcf(self, k):
+        """Calculates binomial coefficient with a given number"""
         n_factorial = self.factorial(self.n)
         k_factorial = self.factorial(k)
         n_k_factorial = self.factorial(self.n - k)
         binomial_coefficient = n_factorial/(n_k_factorial * k_factorial)
-        q = 1 - self.p
-        sec = (self.p ** k) * (q ** (self.n - k))
-        pmf = binomial_coefficient * sec
-        return pmf
+        return binomial_coefficient
+
+    def cdf_equation(self, i):
+        """Calculates cdf for each iteration"""
+        r = self.get_bcf(i) * ((self.p ** i) * ((1 - self.p) ** (self.n - i)))
+        return r
