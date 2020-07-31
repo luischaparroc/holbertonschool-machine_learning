@@ -10,4 +10,7 @@ The following files are scripts written in Python:
 
 | Filename | Description |
 | -------- | ----------- |
-
+| `Poisson` | Class that represents a Poisson distribution with PMF and CDF methods |
+| `Exponential` | Class that represents an Exponential distribution with PDF and CDF methods |
+| `Normal` | Class that represents a Normal distribution with PDF, CDF, x_value and z_score methods |
+| `Binomial` | Class that represents a Binomial distribution with PDF and CDF methods |
