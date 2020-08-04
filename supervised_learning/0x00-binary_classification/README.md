@@ -16,3 +16,4 @@ All of the following files are scripts and programs written in Python:
 | `1-neuron.py` | Class `Neuron` with private instance attributes (W, b, A) |
 | `2-neuron.py` | Class `Neuron` with `forward_prop` method to calculate the forward propagation of the neuron |
 | `3-neuron.py` | Class `Neuron` with `cost` method to calculate the cost of the model using logistic regression |
+| `4-neuron.py` | Class `Neuron` with `evaluate` method which returns the neuron's predictions |
