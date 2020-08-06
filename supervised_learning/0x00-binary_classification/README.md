@@ -21,3 +21,4 @@ All of the following files are scripts and programs written in Python:
 | `6-neuron.py` | Class `Neuron` with `train` method to trains a neuron with logistic regression |
 | `7-neuron.py` | Class `Neuron` with `train` method to trains a neuron and graphs its training cost |
 | `8-neuron.py` | Class `NeuralNetwork` that defines a neural network with one hidden layer performing binary classification |
+| `9-neuron.py` | Class `NeuralNetwork` that defines a neural network based on `8-neural_network.py` file, with private instance attributes |
