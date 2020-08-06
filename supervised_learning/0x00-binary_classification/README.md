@@ -19,3 +19,4 @@ All of the following files are scripts and programs written in Python:
 | `4-neuron.py` | Class `Neuron` with `evaluate` method which returns the neuron's predictions |
 | `5-neuron.py` | Class `Neuron` with `gradient_descent` method to calculates one pass of gradient descent on the neuron |
 | `6-neuron.py` | Class `Neuron` with `train` method to trains a neuron with logistic regression |
+| `7-neuron.py` | Class `Neuron` with `train` method to trains a neuron and graphs its training cost |
