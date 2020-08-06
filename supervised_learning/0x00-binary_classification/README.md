@@ -20,7 +20,8 @@ All of the following files are scripts and programs written in Python:
 | `5-neuron.py` | Class `Neuron` with `gradient_descent` method to calculates one pass of gradient descent on the neuron |
 | `6-neuron.py` | Class `Neuron` with `train` method to trains a neuron with logistic regression |
 | `7-neuron.py` | Class `Neuron` with `train` method to trains a neuron and graphs its training cost |
-| `8-neuron.py` | Class `NeuralNetwork` that defines a neural network with one hidden layer performing binary classification |
-| `9-neuron.py` | Class `NeuralNetwork` that defines a neural network based on `8-neural_network.py` file, with private instance attributes |
-| `10-neuron.py` | Class `NeuralNetwork` with `forward_prop` method |
-| `11-neuron.py` | Class `NeuralNetwork` with method to calculate the cost of the model using logistic regression |
+| `8-neural_network.py` | Class `NeuralNetwork` that defines a neural network with one hidden layer performing binary classification |
+| `9-neural_network.py` | Class `NeuralNetwork` that defines a neural network based on `8-neural_network.py` file, with private instance attributes |
+| `10-neural_network.py` | Class `NeuralNetwork` with `forward_prop` method |
+| `11-neural_network.py` | Class `NeuralNetwork` with method to calculate the cost of the model using logistic regression |
+| `12-neural_network.py` | Class `NeuralNetwork` with `evaluate` method which returns the neural network's predictions |
