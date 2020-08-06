@@ -23,3 +23,4 @@ All of the following files are scripts and programs written in Python:
 | `8-neuron.py` | Class `NeuralNetwork` that defines a neural network with one hidden layer performing binary classification |
 | `9-neuron.py` | Class `NeuralNetwork` that defines a neural network based on `8-neural_network.py` file, with private instance attributes |
 | `10-neuron.py` | Class `NeuralNetwork` with `forward_prop` method |
+| `11-neuron.py` | Class `NeuralNetwork` with method to calculate the cost of the model using logistic regression |
