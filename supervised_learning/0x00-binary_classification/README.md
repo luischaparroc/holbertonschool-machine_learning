@@ -29,3 +29,4 @@ All of the following files are scripts and programs written in Python:
 | `14-neural_network.py` | Class `NeuralNetwork` with `train` method |
 | `16-deep_neural_network.py` | Class `DeepNeuralNetwork` that defines a deep neural network performing binary classification |
 | `17-deep_neural_network.py` | Class `DeepNeuralNetwork` with L, cache and weights as private attributes |
+| `18-deep_neural_network.py` | Class `DeepNeuralNetwork` with `forward_prop` method |
