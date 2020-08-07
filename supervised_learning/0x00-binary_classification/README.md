@@ -30,3 +30,5 @@ All of the following files are scripts and programs written in Python:
 | `16-deep_neural_network.py` | Class `DeepNeuralNetwork` that defines a deep neural network performing binary classification |
 | `17-deep_neural_network.py` | Class `DeepNeuralNetwork` with L, cache and weights as private attributes |
 | `18-deep_neural_network.py` | Class `DeepNeuralNetwork` with `forward_prop` method |
+| `19-deep_neural_network.py` | Class `DeepNeuralNetwork` with method to calculate the cost of the model using logistic regression |
+| `20-deep_neural_network.py` | Class `DeepNeuralNetwork` with `evaluate` method which returns the neural network's predictions |
