@@ -25,3 +25,4 @@ All of the following files are scripts and programs written in Python:
 | `10-neural_network.py` | Class `NeuralNetwork` with `forward_prop` method |
 | `11-neural_network.py` | Class `NeuralNetwork` with method to calculate the cost of the model using logistic regression |
 | `12-neural_network.py` | Class `NeuralNetwork` with `evaluate` method which returns the neural network's predictions |
+| `13-neural_network.py` | Class `NeuralNetwork` with `gradient_descent` method to calculate one pass of gradient descent on the neural network |
