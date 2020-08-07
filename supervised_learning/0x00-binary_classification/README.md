@@ -27,4 +27,5 @@ All of the following files are scripts and programs written in Python:
 | `12-neural_network.py` | Class `NeuralNetwork` with `evaluate` method which returns the neural network's predictions |
 | `13-neural_network.py` | Class `NeuralNetwork` with `gradient_descent` method to calculate one pass of gradient descent on the neural network |
 | `14-neural_network.py` | Class `NeuralNetwork` with `train` method |
-| `16-deep_neural_network.py` | Class `DeepNeuralNetwork` that defines a deep neural network performing binary classification|
+| `16-deep_neural_network.py` | Class `DeepNeuralNetwork` that defines a deep neural network performing binary classification |
+| `17-deep_neural_network.py` | Class `DeepNeuralNetwork` with L, cache and weights as private attributes |
