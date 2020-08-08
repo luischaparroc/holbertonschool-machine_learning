@@ -33,3 +33,4 @@ All of the following files are scripts and programs written in Python:
 | `19-deep_neural_network.py` | Class `DeepNeuralNetwork` with method to calculate the cost of the model using logistic regression |
 | `20-deep_neural_network.py` | Class `DeepNeuralNetwork` with `evaluate` method which returns the neural network's predictions |
 | `21-deep_neural_network.py` | Class `DeepNeuralNetwork` with `gradient_descent` method to calculate one pass of gradient descent on the neural network |
+| `22-deep_neural_network.py` | Class `DeepNeuralNetwork` with `train` method |
