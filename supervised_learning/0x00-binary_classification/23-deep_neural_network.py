@@ -1,36 +1,54 @@
 #!/usr/bin/env python3
-"""Neuron class"""
+"""Deep Neural Network class"""
 import numpy as np
 import matplotlib.pyplot as plt
 
 
-class Neuron:
-    """Class that defines a single neuron performing binary classification"""
+class DeepNeuralNetwork:
+    """Class that defines a neural network with one hidden performing
+    binary classification
+    """
 
-    def __init__(self, nx):
+    @staticmethod
+    def he_et_al(nx, layers):
+        """Calculates weights using he et al method"""
+        weights = dict()
+        for i in range(len(layers)):
+            if type(layers[i]) is not int or layers[i] < 1:
+                raise TypeError('layers must be a list of positive integers')
+            prev_layer = layers[i - 1] if i > 0 else nx
+            w_part1 = np.random.randn(layers[i], prev_layer)
+            w_part2 = np.sqrt(2 / prev_layer)
+            weights.update({
+                'b' + str(i + 1): np.zeros((layers[i], 1)),
+                'W' + str(i + 1): w_part1 * w_part2
+            })
+        return weights
+
+    def __init__(self, nx, layers):
         """Class constructor"""
         if type(nx) is not int:
             raise TypeError('nx must be an integer')
         if nx < 1:
             raise ValueError('nx must be a positive integer')
-        self.__W = np.random.randn(1, nx)
-        self.__b = 0
-        self.__A = 0
+        if type(layers) is not list or len(layers) == 0:
+            raise TypeError('layers must be a list of positive integers')
+
+        self.__L = len(layers)
+        self.__cache = dict()
+        self.__weights = self.he_et_al(nx, layers)
 
     @property
-    def W(self):
-        """W getter"""
-        return self.__W
+    def L(self):
+        return self.__L
 
     @property
-    def b(self):
-        """b getter"""
-        return self.__b
+    def cache(self):
+        return self.__cache
 
     @property
-    def A(self):
-        """A getter"""
-        return self.__A
+    def weights(self):
+        return self.__weights
 
     @staticmethod
     def plot_training_cost(list_iterations, list_cost, graph):
@@ -50,17 +68,23 @@ class Neuron:
         list_cost.append(cost)
 
     def forward_prop(self, X):
-        """Calculates the forward propagation of the neuron
+        """Calculates the forward propagation of the deep neural network
 
         Args:
             X: input data
 
         Returns:
-            Activation function - calculated with sigmoid function
+            Output of the neural network and the cache
         """
-        A_prev = np.matmul(self.__W, X) + self.__b
-        self.__A = 1 / (1 + np.exp(-A_prev))
-        return self.__A
+        self.cache.update({'A0': X})
+        for i in range(self.L):
+            A = self.cache.get('A' + str(i))
+            biases = self.weights.get('b' + str(i + 1))
+            weights = self.weights.get('W' + str(i + 1))
+            Z = np.matmul(weights, A) + biases
+            self.cache.update({'A' + str(i + 1): 1 / (1 + np.exp(-Z))})
+
+        return self.cache.get('A' + str(i + 1)), self.cache
 
     def cost(self, Y, A):
         """Calculates the cost of the model using logistic regression
@@ -78,7 +102,7 @@ class Neuron:
         return cost
 
     def evaluate(self, X, Y):
-        """Evaluates the neuron's predictions
+        """Evaluates the neural network's predictions
 
         Args:
             X: contains the input data
@@ -87,37 +111,51 @@ class Neuron:
         Returns:
             The neuron's prediction and the cost of the network
         """
-        self.forward_prop(X)
-        return np.where(self.A <= 0.5, 0, 1), self.cost(Y, self.A)
+        A, _ = self.forward_prop(X)
+        return np.where(A <= 0.5, 0, 1), self.cost(Y, A)
 
-    def gradient_descent(self, X, Y, A, alpha=0.05):
-        """Calculates one pass of gradient descent on the neuron
+    def gradient_descent(self, Y, cache, alpha=0.05):
+        """Calculates one pass of gradient descent on the deep neural network
 
         Args:
             X: contains the input data
             Y: contains the correct labels for the input data
-            A: containing the activated output of the neuron for each example
+            cache: all intermediary values of the network
             alpha: learning rate
         """
+        n_layers = range(self.L, 0, -1)
         m = Y.shape[1]
-        d_ay = A - Y
-        gradient = np.matmul(d_ay, X.T) / m
-        db = np.sum(d_ay) / m
-        self.__W -= gradient * alpha
-        self.__b -= db * alpha
+        dZ_prev = 0
+        weights = self.weights.copy()
+
+        for i in n_layers:
+            A = cache.get('A' + str(i))
+            A_prev = cache.get('A' + str(i - 1))
+            weights_i = weights.get('W' + str(i))
+            weights_n = weights.get('W' + str(i + 1))
+            biases = weights.get('b' + str(i))
+            if i == self.L:
+                dZ = A - Y
+            else:
+                dZ = np.matmul(weights_n.T, dZ_prev) * (A * (1 - A))
+            dW = np.matmul(dZ, A_prev.T) / m
+            db = np.sum(dZ, axis=1, keepdims=True) / m
+            self.__weights['W' + str(i)] = weights_i - (dW * alpha)
+            self.__weights['b' + str(i)] = biases - (db * alpha)
+            dZ_prev = dZ
 
     def train(self, X, Y, iterations=5000, alpha=0.05,
               verbose=True, graph=True, step=100):
-        """Trains a neuron
+        """Trains the deep neural network
 
         Args:
             X: contains the input data
             Y: contains the correct labels for the input data
             iterations: number of iterations to train over
             alpha: learning rate
-            verbose: boolean to print information about the training
-            graph: boolean to graph training once finishes
-            step: step to print learning information
+
+        Returns:
+            The evaluation of the training data after iterations of training
         """
         if type(iterations) is not int:
             raise TypeError('iterations must be an integer')
@@ -140,7 +178,7 @@ class Neuron:
         for i in list_iterations:
             A, cost = self.evaluate(X, Y)
             self.print_verbose_for_step(i, cost, verbose, step, list_cost)
-            self.gradient_descent(X, Y, self.A, alpha)
+            self.gradient_descent(Y, self.cache, alpha)
 
         self.plot_training_cost(list_iterations, list_cost, graph)
         return A, cost
