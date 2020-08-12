@@ -18,3 +18,4 @@ All of the following folders are projects done during the studies:
 | `math/0x02-calculus` | It aims to learn about summation and product notation, series, derivative, chain rule, partial derivative and integrals. |
 | `math/0x03-probability` | It aims to learn about probability, independence, union, intersection, probability distributions (PDF & PMF), cumulative distribution function, percentile, mean, standard deviation and variance. |
 | `supervised_learning/0x00-binary_classification` | It aims to learn about models, supervised learning, prediction, nodes, weight, bias, activation functions, layers, logistic regression, loss and cost functions. |
+| `supervised_learning/0x01-multiclass_classification` | It aims to learn about multiclass classification, one-hot vector, softmax function, cross-entropy loss and pickling. |
