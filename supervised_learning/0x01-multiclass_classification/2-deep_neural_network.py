@@ -196,7 +196,8 @@ class DeepNeuralNetwork:
         for i in list_iterations:
             A, cost = self.evaluate(X, Y)
             self.print_verbose_for_step(i, cost, verbose, step, list_cost)
-            self.gradient_descent(Y, self.cache, alpha)
+            if i < iterations:
+                self.gradient_descent(Y, self.cache, alpha)
 
         self.plot_training_cost(list_iterations, list_cost, graph)
         return self.evaluate(X, Y)
