@@ -9,3 +9,6 @@
 
 # Ignore PyCharm cache files
 *.idea
+
+# Ignore Pickle files
+*.pkl
