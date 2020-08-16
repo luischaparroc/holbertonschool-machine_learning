@@ -16,3 +16,4 @@ All of the following files are scripts and programs written in Python:
 | `2-forward_prop.py` | Function that creates the forward propagation graph for the neural network |
 | `3-calculate_accuracy.py` | Function that calculates the accuracy of a prediction |
 | `4-calculate_loss.py` | Function that calculates the softmax cross-entropy loss of a prediction |
+| `5-create_train_op.py` | Function that creates the training operation for the network |
