@@ -12,3 +12,4 @@ All of the following files are scripts and programs written in Python:
 | Filename | Description |
 | -------- | ----------- |
 | `0-create_placeholders.py` | Function that returns two placeholders, `x` and `y` for the neural network |
+| `1-create_layer.py` | Function that creates a layer with a given activation function and input, and returns the output of a layer |
