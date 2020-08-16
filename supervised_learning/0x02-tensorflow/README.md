@@ -14,3 +14,4 @@ All of the following files are scripts and programs written in Python:
 | `0-create_placeholders.py` | Function that returns two placeholders, `x` and `y` for the neural network |
 | `1-create_layer.py` | Function that creates a layer with a given activation function and input, and returns the output of a layer |
 | `2-forward_prop.py` | Function that creates the forward propagation graph for the neural network |
+| `3-calculate_accuracy.py` | Function that calculates the accuracy of a prediction |
