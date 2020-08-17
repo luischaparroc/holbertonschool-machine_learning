@@ -18,3 +18,4 @@ All of the following files are scripts and programs written in Python:
 | `4-calculate_loss.py` | Function that calculates the softmax cross-entropy loss of a prediction |
 | `5-create_train_op.py` | Function that creates the training operation for the network |
 | `6-train.py` | Function that builds, trains and saves a neural network classifier |
+| `7-evaluate.py` | Function that evaluates the output of a neural network |
