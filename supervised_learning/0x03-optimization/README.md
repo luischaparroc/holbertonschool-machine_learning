@@ -12,4 +12,5 @@ All of the following files are scripts and programs written in Python:
 
 | Filename | Description |
 | -------- | ----------- |
-| `0-norm_constants.py` | Function `def normalization_constants(X):` that calculates the normalization (standardization) constant of a matrix |
+| `0-norm_constants.py` | Function `normalization_constants` that calculates the normalization (standardization) constant of a matrix |
+| `1-normalize.py` | Function `normalize` that normalizes (standardizes) a matrix |
