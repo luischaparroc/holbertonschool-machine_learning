@@ -23,3 +23,4 @@ All of the following files are scripts and programs written in Python:
 | `9-Adam.py` | Function `update_variables_Adam` that updates a variable in place using the Adam optimization |
 | `10-Adam.py` | Function `create_Adam_op` that creates the training operation for a neural network, using the Adam optimization algorithm |
 | `11-learning_rate_decay.py` | Function `learning_rate_decay` that updates the learning rate using inverse time decay |
+| `12-learning_rate_decay.py` | Function `learning_rate_decay` that creates a learning rate decay operation in tensorflow, using inverse time decay |
