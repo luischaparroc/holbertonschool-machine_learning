@@ -20,3 +20,4 @@ All of the following files are scripts and programs written in Python:
 | `6-momentum.py` | Function `create_momentum_op` that creates the training operation for a neural network, using the gradient descent with momentum optimization algorithm |
 | `7-RMSProp.py` | Function `update_variables_RMSProp` that updates a variable using the RMSProp optimization algorithm |
 | `8-RMSProp.py` | Function `create_RMSProp_op` that creates the training operation for a neural network, using the RMSProp optimization algorithm |
+| `9-Adam.py` | Function `update_variables_Adam` that updates a variable in place using the Adam optimization |
