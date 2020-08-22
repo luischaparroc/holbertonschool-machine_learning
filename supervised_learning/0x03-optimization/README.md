@@ -21,3 +21,4 @@ All of the following files are scripts and programs written in Python:
 | `7-RMSProp.py` | Function `update_variables_RMSProp` that updates a variable using the RMSProp optimization algorithm |
 | `8-RMSProp.py` | Function `create_RMSProp_op` that creates the training operation for a neural network, using the RMSProp optimization algorithm |
 | `9-Adam.py` | Function `update_variables_Adam` that updates a variable in place using the Adam optimization |
+| `10-Adam.py` | Function `create_Adam_op` that creates the training operation for a neural network, using the Adam optimization algorithm |
