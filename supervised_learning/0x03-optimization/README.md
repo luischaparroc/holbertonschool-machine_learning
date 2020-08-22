@@ -16,3 +16,4 @@ All of the following files are scripts and programs written in Python:
 | `1-normalize.py` | Function `normalize` that normalizes (standardizes) a matrix |
 | `2-shuffle_data.py` | Function `suffle_data` that shuffles the data points in two matrices the same way |
 | `4-moving_average.py` | Function `moving_average` that calculates the weighted moving average of a data set |
+| `5-momentum.py` | Function `update_variables_momentum` that updates a variable using the gradient descent with momentum optimization algorithm |
