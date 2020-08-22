@@ -17,3 +17,4 @@ All of the following files are scripts and programs written in Python:
 | `2-shuffle_data.py` | Function `suffle_data` that shuffles the data points in two matrices the same way |
 | `4-moving_average.py` | Function `moving_average` that calculates the weighted moving average of a data set |
 | `5-momentum.py` | Function `update_variables_momentum` that updates a variable using the gradient descent with momentum optimization algorithm |
+| `6-momentum.py` | Function `create_momentum_op` that creates the training operation for a neural network, using the gradient descent with momentum optimization algorithm |
