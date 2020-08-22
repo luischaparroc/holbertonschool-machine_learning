@@ -15,3 +15,4 @@ All of the following files are scripts and programs written in Python:
 | `0-norm_constants.py` | Function `normalization_constants` that calculates the normalization (standardization) constant of a matrix |
 | `1-normalize.py` | Function `normalize` that normalizes (standardizes) a matrix |
 | `2-shuffle_data.py` | Function `suffle_data` that shuffles the data points in two matrices the same way |
+| `4-moving_average.py` | Function `moving_average` that calculates the weighted moving average of a data set |
