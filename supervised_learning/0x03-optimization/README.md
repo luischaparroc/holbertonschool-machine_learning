@@ -25,3 +25,4 @@ All of the following files are scripts and programs written in Python:
 | `11-learning_rate_decay.py` | Function `learning_rate_decay` that updates the learning rate using inverse time decay |
 | `12-learning_rate_decay.py` | Function `learning_rate_decay` that creates a learning rate decay operation in tensorflow, using inverse time decay |
 | `13-batch_norm.py` | Function `batch_norm` that normalizes an unactivated output of a neural network using batch normalization |
+| `14-batch_norm.py` | Function `create_batch_norm_layer` that creates a batch normalization layer for a neural network |
