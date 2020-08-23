@@ -20,3 +20,4 @@ All of the following folders are projects done during the studies:
 | `supervised_learning/0x00-binary_classification` | It aims to learn about models, supervised learning, prediction, nodes, weight, bias, activation functions, layers, logistic regression, loss and cost functions. |
 | `supervised_learning/0x01-multiclass_classification` | It aims to learn about multiclass classification, one-hot vector, softmax function, cross-entropy loss and pickling. |
 | `supervised_learning/0x02-tensorflow` | It aims to learn graphs, sessions, tensors, placeholders, operations, namespaces, training and checkpoints on Tensorflow |
+| `supervised_learning/0x03-optimization` | It aims to learn hypermarameters, saddle points, normalizing data, stochastic gradient descent, mini-batch gradient descent, moving average, RMSProp, Adam optimization, learning rate decay and batch normalization |
