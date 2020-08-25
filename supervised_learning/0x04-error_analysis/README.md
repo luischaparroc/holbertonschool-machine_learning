@@ -13,3 +13,4 @@ All of the following files are scripts and programs written in Python:
 | Filename | Description |
 | -------- | ----------- |
 | `0-create_confusion.py` | Function `create_confusion_matrix` that creates a confusion matrix |
+| `1-sensitivity.py` | Function `sensitivity` that calculates the sensitivity for each class in a confussion matrix |
