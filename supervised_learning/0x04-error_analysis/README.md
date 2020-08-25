@@ -17,3 +17,4 @@ All of the following files are scripts and programs written in Python:
 | `2-precision.py` | Function `precision` that calculates the precision for each class in a confusion matrix |
 | `3-specificity.py` | Function `specificity` that calculates the specificity for each class in a confusion matrix |
 | `4-f1_score.py` | Function `f1_score` that calculates the F1 score of a confusion matrix |
+| `5-error_handling` | Answers of some questions... |
