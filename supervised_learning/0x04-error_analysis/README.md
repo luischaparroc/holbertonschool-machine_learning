@@ -18,3 +18,4 @@ All of the following files are scripts and programs written in Python:
 | `3-specificity.py` | Function `specificity` that calculates the specificity for each class in a confusion matrix |
 | `4-f1_score.py` | Function `f1_score` that calculates the F1 score of a confusion matrix |
 | `5-error_handling` | Answers of some questions... |
+| `6-compare_and_contrast` | Answers of some questions... |
