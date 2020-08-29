@@ -14,3 +14,5 @@ All of the following files are scripts and programs written in Python:
 | -------- | ----------- |
 | `0-l2_reg_cost.py` | Function `l2_reg_cost` that calculates the cost of a neural network with L2 regularization |
 | `1-l2_reg_gradient_descent.py` | Function `l2_reg_gradient_descent` that updates the weights and biases of a neural network using gradient descent with L2 regularization |
+| `2-l2_reg_cost.py ` | Function `l2_reg_cost` that calculates the cost of a neural network with L2 regularization |
+| `3-l2_reg_create_layer.py` | Function `l2_reg_create_layer` that creates a tensorflow layer that includes L2 regularization |
