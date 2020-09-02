@@ -17,3 +17,4 @@ All of the following files are scripts and programs written in Python:
 | `2-optimize.py` | Function `optimize_model` that sets up Adam optimization for a keras model with categorical crossentropy loss and accuracy metrics |
 | `3-one_hot.py` | Function `one_hot` that converts a label vector into a one-hot matrix |
 | `4-train.py` | Function `train_model` that trains a model using mini-batch gradient descent |
+| `5-train.py` | Function `train_model` that trains a model using mini-batch gradient descent and validates data |
