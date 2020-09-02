@@ -12,4 +12,5 @@ All of the following files are scripts and programs written in Python:
 
 | Filename | Description |
 | -------- | ----------- |
-| `0-sequential.py` | Function `build_model` that builds a neural network with the Keras library |
+| `0-sequential.py` | Function `build_model` that builds a neural network with the Keras library using Sequential class |
+| `1-input.py` | Function `build_model` that builds a neural network with the Keras library using Input class |
