@@ -14,3 +14,4 @@ All of the following files are scripts and programs written in Python:
 | -------- | ----------- |
 | `0-sequential.py` | Function `build_model` that builds a neural network with the Keras library using Sequential class |
 | `1-input.py` | Function `build_model` that builds a neural network with the Keras library using Input class |
+| `2-optimize.py` | Function `build_model` that sets up Adam optimization for a keras model with categorical crossentropy loss and accuracy metrics |
