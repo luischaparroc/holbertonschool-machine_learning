@@ -25,3 +25,4 @@ All of the following files are scripts and programs written in Python:
 | `10-weights.py` | Functions `save_weights` and `load_weights` |
 | `11-config.py` | Functions `save_config` and `load_config` |
 | `12-test.py` | Function `test_model` |
+| `13-predict.py` | Function `predict` that makes a prediction using a neural network |
