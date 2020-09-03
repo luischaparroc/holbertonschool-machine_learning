@@ -19,3 +19,4 @@ All of the following files are scripts and programs written in Python:
 | `4-train.py` | Function `train_model` that trains a model using mini-batch gradient descent |
 | `5-train.py` | Function `train_model` that trains a model using mini-batch gradient descent and validates data |
 | `6-train.py` | Function `train_model` that trains a model using mini-batch gradient descent using early stopping |
+| `7-train.py` | Function `train_model` that trains a model using mini-batch gradient descent with learning rate decay |
