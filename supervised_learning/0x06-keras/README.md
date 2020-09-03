@@ -22,3 +22,4 @@ All of the following files are scripts and programs written in Python:
 | `7-train.py` | Function `train_model` that trains a model using mini-batch gradient descent with learning rate decay |
 | `8-train.py` | Function `train_model` that trains a model using mini-batch gradient descent that saves the best iteration of the model |
 | `9-model.py` | Functions `save_model` and `load_model` |
+| `10-weights.py` | Functions `save_weights` and `load_weights` |
