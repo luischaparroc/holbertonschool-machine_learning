@@ -24,3 +24,4 @@ All of the following files are scripts and programs written in Python:
 | `9-model.py` | Functions `save_model` and `load_model` |
 | `10-weights.py` | Functions `save_weights` and `load_weights` |
 | `11-config.py` | Functions `save_config` and `load_config` |
+| `12-test.py` | Function `test_model` |
