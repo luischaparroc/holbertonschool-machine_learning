@@ -16,3 +16,4 @@ The following files are scripts written in Python:
 | `3-convolve_grayscale.py` | Function `convolve_grayscale` that performs a convolution on grayscale images |
 | `4-convolve_channels.py` | Function `convolve_channels` that performs a convolution on images with channels |
 | `5-convolve.py` | Function `convolve` that performs a convolution on images using multiple kernels |
+| `6-pool.py` | Function `pool` that performs pooling on images |
