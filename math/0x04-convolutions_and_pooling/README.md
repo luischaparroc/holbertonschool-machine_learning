@@ -11,3 +11,4 @@ The following files are scripts written in Python:
 | Filename | Description |
 | -------- | ----------- |
 | `0-convolve_grayscale_valid.py` | Function `convolve_grayscale_valid` that performs a valid convolution on grayscale imagees |
+| `1-convolve_grayscale_same.py` | Function `convolve_grayscale_same` that performs a same convolution on grayscale imagees |
