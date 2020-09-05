@@ -14,3 +14,4 @@ The following files are scripts written in Python:
 | `1-convolve_grayscale_same.py` | Function `convolve_grayscale_same` that performs a same convolution on grayscale images |
 | `2-convolve_grayscale_padding.py` | Function `convolve_grayscale_padding` that performs a same convolution on grayscale images with custom padding |
 | `3-convolve_grayscale.py` | Function `convolve_grayscale` that performs a convolution on grayscale images |
+| `4-convolve_channels.py` | Function `convolve_channels` that performs a convolution on images with channels |
