@@ -13,3 +13,4 @@ All of the following files are scripts and programs written in Python:
 | Filename | Description |
 | -------- | ----------- |
 | `0-conv_forward.py` | Function `conv_forward` that performs forward propagation over a convolutional layer of a neural network |
+| `1-pool_forward.py` | Function `pool_forward` that performs forward propagation over a pooling layer of a neural network |
