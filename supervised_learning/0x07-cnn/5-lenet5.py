@@ -7,13 +7,12 @@ def lenet5(X):
     """Builds a modified version of the LeNet-5 architecture using
     keras"""
 
-    init = K.initializers.HeNormal()
-    activation = K.activations.relu
+    init = K.initializers.he_normal()
 
     conv2d1 = K.layers.Conv2D(
         6,
         (5, 5),
-        activation=activation,
+        activation='relu',
         padding='same',
         kernel_initializer=init
     )(X)
@@ -26,7 +25,7 @@ def lenet5(X):
     con2d2 = K.layers.Conv2D(
         16,
         (5, 5),
-        activation=activation,
+        activation='relu',
         padding='valid',
         kernel_initializer=init
     )(maxpool1)
@@ -40,23 +39,30 @@ def lenet5(X):
 
     fullcc1 = K.layers.Dense(
         120,
-        activation=activation,
+        activation='relu',
         kernel_initializer=init
     )(flatten)
 
     fullcc2 = K.layers.Dense(
         84,
-        activation=activation,
+        activation='relu',
         kernel_initializer=init
     )(fullcc1)
 
     fullcc3 = K.layers.Dense(
         10,
+        activation='softmax',
         kernel_initializer=init
     )(fullcc2)
 
-    output = K.activations.softmax(fullcc3)
+    model = K.Model(inputs=X, outputs=fullcc3)
 
-    model = K.Model(inputs=X, outputs=output)
+    opt = K.optimizers.Adam()
+
+    model.compile(
+        loss='categorical_crossentropy',
+        optimizer=opt,
+        metrics=['accuracy']
+    )
 
     return model
