@@ -1,0 +1,15 @@
+# Keras
+
+Project done during **Software Engineering studies** at **Holberton School**. It aims to understand about skip connection, bottleneck layer, Inception Network, ResNet, ResNeXt and DenseNet.
+
+## Technologies
+* Python Scripts are written with Python 3.5
+* `Tensorflow`, version 1.12
+* `NumPy`, version 1.15
+
+## Files
+All of the following files are scripts and programs written in Python:
+
+| Filename | Description |
+| -------- | ----------- |
+| `0-inception_block.py` | Function `inception_block` that builds an inception block |
