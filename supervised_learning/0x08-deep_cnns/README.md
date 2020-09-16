@@ -15,3 +15,4 @@ All of the following files are scripts and programs written in Python:
 | `0-inception_block.py` | Function `inception_block` that builds an inception block |
 | `1-inception_network.py` | Function `inception_network` that builds an inception network |
 | `2-identity_block.py` | Function `identity_block` that builds an identity block |
+| `3-projection_block.py` | Function `projection_block` that builds a projection block |
