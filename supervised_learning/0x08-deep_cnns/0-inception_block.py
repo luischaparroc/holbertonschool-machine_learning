@@ -57,6 +57,7 @@ def inception_block(A_prev, filters):
     convFPP = K.layers.Conv2D(
         filters=FPP,
         kernel_size=(1, 1),
+        activation='relu',
         padding='same',
         kernel_initializer=init
     )(maxpool)

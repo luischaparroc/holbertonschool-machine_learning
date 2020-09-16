@@ -18,7 +18,7 @@ def identity_block(A_prev, filters):
     )(A_prev)
 
     bn1 = K.layers.BatchNormalization(
-        axis=-1
+        axis=3
     )(convF11)
 
     activation1 = K.layers.Activation('relu')(bn1)
@@ -32,7 +32,7 @@ def identity_block(A_prev, filters):
     )(activation1)
 
     bn2 = K.layers.BatchNormalization(
-        axis=-1
+        axis=3
     )(convF3)
 
     activation2 = K.layers.Activation('relu')(bn2)
@@ -46,7 +46,7 @@ def identity_block(A_prev, filters):
     )(activation2)
 
     bn3 = K.layers.BatchNormalization(
-        axis=-1
+        axis=3
     )(convF12)
 
     summation = K.layers.Add()([A_prev, bn3])

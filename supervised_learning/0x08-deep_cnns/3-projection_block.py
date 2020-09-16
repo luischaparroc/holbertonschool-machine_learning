@@ -19,7 +19,7 @@ def projection_block(A_prev, filters, s=2):
     )(A_prev)
 
     bn1 = K.layers.BatchNormalization(
-        axis=-1
+        axis=3
     )(convF11)
 
     activation1 = K.layers.Activation('relu')(bn1)
@@ -33,7 +33,7 @@ def projection_block(A_prev, filters, s=2):
     )(activation1)
 
     bn2 = K.layers.BatchNormalization(
-        axis=-1
+        axis=3
     )(convF3)
 
     activation2 = K.layers.Activation('relu')(bn2)
@@ -60,7 +60,7 @@ def projection_block(A_prev, filters, s=2):
     )(A_prev)
 
     bn1p = K.layers.BatchNormalization(
-        axis=-1
+        axis=3
     )(convF12p)
 
     summation = K.layers.Add()([bn3, bn1p])
