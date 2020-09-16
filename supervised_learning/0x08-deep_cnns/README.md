@@ -13,3 +13,4 @@ All of the following files are scripts and programs written in Python:
 | Filename | Description |
 | -------- | ----------- |
 | `0-inception_block.py` | Function `inception_block` that builds an inception block |
+| `1-inception_network.py` | Function `inception_network` that builds an inception network |
