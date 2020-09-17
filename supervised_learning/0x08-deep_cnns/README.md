@@ -16,3 +16,4 @@ All of the following files are scripts and programs written in Python:
 | `1-inception_network.py` | Function `inception_network` that builds an inception network |
 | `2-identity_block.py` | Function `identity_block` that builds an identity block |
 | `3-projection_block.py` | Function `projection_block` that builds a projection block |
+| `4-resnet50.py` | Function `resnet50` that builds the ResNet-50 architecture |
