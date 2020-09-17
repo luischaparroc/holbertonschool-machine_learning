@@ -17,3 +17,4 @@ All of the following files are scripts and programs written in Python:
 | `2-identity_block.py` | Function `identity_block` that builds an identity block |
 | `3-projection_block.py` | Function `projection_block` that builds a projection block |
 | `4-resnet50.py` | Function `resnet50` that builds the ResNet-50 architecture |
+| `5-dense_block.py` | Function `dense_block` that builds a dense block |
