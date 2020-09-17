@@ -18,3 +18,4 @@ All of the following files are scripts and programs written in Python:
 | `3-projection_block.py` | Function `projection_block` that builds a projection block |
 | `4-resnet50.py` | Function `resnet50` that builds the ResNet-50 architecture |
 | `5-dense_block.py` | Function `dense_block` that builds a dense block |
+| `6-transition_layer.py` | Function `transition_layer` that builds a transition layer |
