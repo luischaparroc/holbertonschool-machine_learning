@@ -19,3 +19,4 @@ All of the following files are scripts and programs written in Python:
 | `4-resnet50.py` | Function `resnet50` that builds the ResNet-50 architecture |
 | `5-dense_block.py` | Function `dense_block` that builds a dense block |
 | `6-transition_layer.py` | Function `transition_layer` that builds a transition layer |
+| `7-densenet121.py` | Function `densenet121` that builds the DenseNet-121 |
